@@ -1,5 +1,5 @@
 {
-  "name": "vk-api=help",
+  "name": "vk-api-help",
   "version": "1.0.0",
   "description": "Easily work with vk api methods with promise",
   "main": "index.js",
