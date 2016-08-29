@@ -1,6 +1,13 @@
+##Start
+```sh
+npm install vk-api-help
+```
+
+##Get started
+```js
 var VK = require('vk_api');
 
-//vkRequest
+//Request to any VK api method
 var vkRequest = new VK.VkRequest(USER_TOKEN);
 vkRequest.method('audio.get', { owner_id: 4375519, count: 10, offset: 20})
 .then(function(json) {
@@ -10,7 +17,7 @@ vkRequest.method('audio.get', { owner_id: 4375519, count: 10, offset: 20})
 	console.log(error);
 });
 
-//vkGetTokenFromCode
+//Reqeust to VK api for get access token by user code
 var vkToken = new VK.VkToken(CLIENT_ID, CLIENT_SECRET);
 vkToken.getTokenFromCode(USER_CODE)
 .then(function(json) {
@@ -19,3 +26,4 @@ vkToken.getTokenFromCode(USER_CODE)
 .catch(function(error) {
 	console.log(error);
 });
+```
