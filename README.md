@@ -9,7 +9,7 @@ var VK = require('vk_api');
 
 //Request to any VK api method
 var vkRequest = new VK.VkRequest(USER_TOKEN);
-vkRequest.method('audio.get', { owner_id: 4375519, count: 10, offset: 20})
+vkRequest.method('audio.get', { owner_id: USER_ID, count: COUNT, offset: OFFSET })
 .then(function(json) {
 	console.log(json);
 })
