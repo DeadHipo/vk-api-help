@@ -1,21 +1,21 @@
-var VK = require('vk_api');\n\n
+var VK = require('vk_api');
 
-//vkRequest\n
-var vkRequest = new VK.VkRequest(USER_TOKEN);\n
-vkRequest.method('audio.get', { owner_id: 4375519, count: 10, offset: 20})\n
-.then(function(json) {\n
-	console.log(json);\n
-})\n
-.catch(function(error) {\n
-	console.log(error);\n
-});\n
+//vkRequest
+var vkRequest = new VK.VkRequest(USER_TOKEN);
+vkRequest.method('audio.get', { owner_id: 4375519, count: 10, offset: 20})
+.then(function(json) {
+	console.log(json);
+})
+.catch(function(error) {
+	console.log(error);
+});
 
-//vkGetTokenFromCode\n
-var vkToken = new VK.VkToken(CLIENT_ID, CLIENT_SECRET);\n
-vkToken.getTokenFromCode(USER_CODE)\n
-.then(function(json) {\n
-	console.log(json);\n
-})\n
-.catch(function(error) {\n
-	console.log(error);\n
-});\n
+//vkGetTokenFromCode
+var vkToken = new VK.VkToken(CLIENT_ID, CLIENT_SECRET);
+vkToken.getTokenFromCode(USER_CODE)
+.then(function(json) {
+	console.log(json);
+})
+.catch(function(error) {
+	console.log(error);
+});
