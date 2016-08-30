@@ -1,10 +1,14 @@
 {
   "name": "vk-api-help",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Easily work with vk api methods with promise",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeadHipo/vk-api-help.git"
   },
   "author": "nearlydeadhipo",
   "license": "ISC",
