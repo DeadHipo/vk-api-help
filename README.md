@@ -1,3 +1,5 @@
+[![NPM](https://nodei.co/npm/vk-api-help.png?downloads=true&downloadRank=true)](https://nodei.co/npm/vk-api-help/)
+
 ##Start
 ```sh
 npm install vk-api-help
